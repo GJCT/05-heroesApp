@@ -12,7 +12,9 @@ const routes: Routes =[
   {
     path:'heroes',
     loadChildren: () =>import('./heroes/heroes.module')
-                  .then(m => m.HeroesModule)
+                  .then(m => m.HeroesModule),
+                  canActivate:[],
+                  canLoad:[]
   },
   {
     path: '404',
