@@ -11,6 +11,8 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { MaterialModule } from '../material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,6 +29,8 @@ import { MaterialModule } from '../material/material.module';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
+    FormsModule,
     HeroesRoutingModule,
     MaterialModule
   ]
